@@ -10,9 +10,16 @@ try {
     $email = $_POST['email'];
     $wachtwoord = $_POST['wachtwoord'];
     $wachtwoord = password_hash($wachtwoord, PASSWORD_DEFAULT);
+    $naam = $_POST['naam'];
+    $achternaam = $_POST['achternaam']; 
+    $huisnummer = $_POST['huisnummer'];
+    $postcode = $_POST['postcode'];
+    $telefoonnummer = $_POST['telefoonnummer'];
 
-    $db->insermail($email, $wachtwoord);
-    header("Location:gegevens.php");
+
+
+    $db->insergegevens($email, $wachtwoord,$naam, $achternaam, $huisnummer, $postcode, $telefoonnummer);
+
 
 
 }   
@@ -32,6 +39,12 @@ try {
     <form method="POST">
         <input type="text" name="email" placeholder="u email" required>
         <input type="password" name="wachtwoord" placeholder="u wachtwoord" required>
+
+        <input type="text" name="naam" placeholder="u naam" required>
+        <input type="text" name="achternaam" placeholder="u acthernaam" required>
+        <input type="text" name="huisnummer" placeholder="u huisnummer" required>
+        <input type="text" name="postcode" placeholder="u postcode" required>
+        <input type="tel" name="telefoonnummer" placeholder="u telefoon nummer" required>
         <input type="submit" name= "verzenden">
     </form>
 </body>

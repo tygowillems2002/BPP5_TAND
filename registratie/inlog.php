@@ -1,20 +1,16 @@
 <?php
 require '../includes/db.php';
+session_start();    
 
-$db = new Database();
 
 try {
   if ($_SERVER["REQUEST_METHOD"] == 'POST'){
-    $naam = $_POST['naam'];
-    $achternaam = $_POST['achternaam']; 
-    $huisnummer = $_POST['huisnummer'];
-    $postcode = $_POST['postcode'];
-    $telefoonnummer = $_POST['telefoonnummer'];
+    $db = new Database();
+    $email = htmlspecialchars($_POST['email']);
+    $wachtwoord = htmlspecialchars($_POST['wachtwoord']);
+    $wachtwoord = password_hash($wachtwoord, PASSWORD_DEFAULT);
 
-    $db->insergegevens($naam, $achternaam, $huisnummer, $postcode, $telefoonnummer);
-
-    if(isset($_SESSION['']));
-            
+    $login = $db->inlog($email);
 
 
 
@@ -32,7 +28,9 @@ try {
     <title>Document</title>
 </head>
 <body>
-    <form method="POST">
+<form method="POST">
+        <input type="text" name="email" placeholder="u email" required>
+        <input type="password" name="wachtwoord" placeholder="u wachtwoord" required>
         <input type="text" name="naam" placeholder="u naam" required>
         <input type="text" name="achternaam" placeholder="u acthernaam" required>
         <input type="text" name="huisnummer" placeholder="u huisnummer" required>

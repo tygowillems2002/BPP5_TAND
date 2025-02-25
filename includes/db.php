@@ -10,25 +10,31 @@ class Database {
     }       
     }
 
-    public function insermail($email,$wachtwoord){
-        $sql = $this->pdo->prepare("INSERT INTO register(email,wachtwoord) VALUES (:email,:wachtwoord)");
+    public function insergegevens($email,$wachtwoord,$naam, $achternaam, $huisnummer, $postcode, $telefoonnummer) {
+        $sql = $this->pdo->prepare("INSERT INTO register (email,wachtwoord, naam, achternaam, huisnummer, postcode, telefoonnummer) 
+        VALUES ( :email,:wachtwoord,:naam, :achternaam, :huisnummer, :postcode, :telefoonnummer)");
         $sql->execute([
             "email" => $email,
-            "wachtwoord" => $wachtwoord
-        ]);
-    }
-
-    public function insergegevens($naam, $achternaam, $huisnummer, $postcode, $telefoonnummer) {
-        $sql = $this->pdo->prepare("INSERT INTO gegevens ( registerID, naam, achternaam, huisnummer, postcode, telefoonnummer) 
-        VALUES (:registerID, :naam, :achternaam, :huisnummer, :postcode, :telefoonnummer)");
-        $sql->execute([
+            "wachtwoord" => $wachtwoord,
             "naam" => $naam,
-            "achternaam" => $achternaam,
+            "achternaam" => $achternaam, 
             "huisnummer" => $huisnummer,
             "postcode" => $postcode,
             "telefoonnummer" => $telefoonnummer
         ]);
     }
+
+    
+    public function login($email){
+        $sql = $this->pdo->prepare("SELECT * from user WHERE email = :email");
+        $sql->execute([
+            "email" => $email,
+        ]);
+        $result = $sql->fetch();
+        return $result;
+    }
+
+
     
 }
 ?>
