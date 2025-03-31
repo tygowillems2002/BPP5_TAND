@@ -1,0 +1,83 @@
+body {
+        font-family: 'Arial', sans-serif;
+        background-color: #f0f4f8; 
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    
+    .form {
+        background: #ffffff;
+        padding: 40px;
+        border-radius: 12px;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); 
+        width: 100%;
+        max-width: 400px;
+        text-align: center;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .form:hover {
+        transform: translateY(-5px); 
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    }
+    
+    .form h1 {
+        margin-bottom: 25px;
+        color: #0d47a1; 
+        font-size: 26px;
+        font-weight: bold;
+        border-bottom: 3px solid #42a5f5; 
+        padding-bottom: 10px;
+    }
+    
+    .form input[type="text"],
+    .form input[type="password"] {
+        width: 100%;
+        padding: 12px;
+        margin-bottom: 20px;
+        border: 1px solid #cfd8dc;
+        border-radius: 6px;
+        font-size: 16px;
+        box-sizing: border-box;
+        transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .form input[type="text"]:focus,
+    .form input[type="password"]:focus {
+        border-color: #42a5f5; 
+        box-shadow: 0 0 5px rgba(66, 165, 245, 0.5); 
+        outline: none;
+    }
+    
+    .form input[type="submit"] {
+        background-color: #42a5f5; 
+        color: white;
+        border: none;
+        cursor: pointer;
+        font-weight: bold;
+        padding: 14px 20px;
+        border-radius: 6px;
+        font-size: 16px;
+        width: 100%;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+    
+    .form input[type="submit"]:hover {
+        background-color: #1e88e5; 
+        transform: scale(1.02); 
+    }
+    
+    .form input[type="submit"]:active {
+        background-color: #1565c0; 
+        transform: scale(0.98); 
+    }
+    
+    .form input::placeholder {
+        color: #b0bec5; 
+        font-size: 14px;
+    }
+    
