@@ -92,7 +92,7 @@ session_start();
       </div>
       <div class="review-item">
         <div class="review-profile">
-          <img src="../img/profile2.jpg" alt="Profile 2" class="profile-img" />
+          <img src="../img/review2.png" alt="Profile 2" class="profile-img" />
         </div>
         <div class="review-content">
           <p>"Ik was altijd bang voor de tandarts, maar hier voelde ik me meteen op mijn gemak. Bedankt voor de geweldige zorg!"</p>
@@ -101,34 +101,54 @@ session_start();
       </div>
       <div class="review-item">
         <div class="review-profile">
-          <img src="../img/profile3.jpg" alt="Profile 3" class="profile-img" />
+          <img src="../img/review3.png" alt="Profile 3" class="profile-img" />
         </div>
         <div class="review-content">
           <p>"De wortelkanaalbehandeling was volledig pijnloos. Ik raad deze kliniek aan iedereen aan!"</p>
-          <h4>- Lisa van Dijk</h4>
+          <h4>- Anton Vermeer</h4>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-  <!-- ABOUT SECTION -->
-  <section id="about" class="about-section">
-    <div class="container about-content">
-      <div class="about-text">
-        <h2>About Our Clinic</h2>
-        <p>
-          We are dedicated to providing top-tier dental care with modern equipment and highly trained professionals.
-          Your comfort and satisfaction are our top priorities.
-        </p>
-        <p>
-          Whether you need a routine check-up or specialized dental treatment, we are here to help you achieve and maintain a healthy, beautiful smile.
-        </p>
+  <!-- OPENINGSTIJDEN SECTION -->
+<section id="openingstijden" class="openingstijden-section">
+  <div class="container">
+    <h2>Openingstijden</h2>
+    <div class="openingstijden-grid">
+      <div class="openingstijden-item">
+        <h4>Maandag</h4>
+        <p>08:00 - 17:00</p>
+      </div>
+      <div class="openingstijden-item">
+        <h4>Dinsdag</h4>
+        <p>08:00 - 17:00</p>
+      </div>
+      <div class="openingstijden-item">
+        <h4>Woensdag</h4>
+        <p>08:00 - 17:00</p>
+      </div>
+      <div class="openingstijden-item">
+        <h4>Donderdag</h4>
+        <p>08:00 - 17:00</p>
+      </div>
+      <div class="openingstijden-item">
+        <h4>Vrijdag</h4>
+        <p>08:00 - 17:00</p>
+      </div>
+      <div class="openingstijden-item">
+        <h4>Zaterdag</h4>
+        <p>09:00 - 13:00</p>
+      </div>
+      <div class="openingstijden-item">
+        <h4>Zondag</h4>
+        <p>Gesloten</p>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  
   <!-- FOOTER -->
   <footer class="site-footer">
     <div class="container footer-content">

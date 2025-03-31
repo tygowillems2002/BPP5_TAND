@@ -23,22 +23,30 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet" />
 </head>
 <body>
-  <!-- HEADER -->
-  <header class="site-header">
-    <div class="container nav-container">
-      <div class="logo">
-        <a href="index.php">DentaCare</a>
-      </div>
-      <nav class="main-nav">
-        <ul>
-          <li><a href="index.php#hero">Home</a></li>
-          <li><a href="index.php#services">Services</a></li>
-          <li><a href="index.php#about">About Us</a></li>
-          <li><a href="contact.php">Contact</a></li>
-        </ul>
-      </nav>
+ <!-- HEADER -->
+ <header class="site-header">
+  <div class="container nav-container">
+    <div class="logo">
+      <a href="index.php">DentaCare</a>
     </div>
-  </header>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="services.php">Services</a></li>
+        <li><a href="overons.php">About Us</a></li>
+        <li><a href="contact.php">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="header-buttons">
+      <?php if (!empty($_SESSION['login'])): ?>
+        <a href="../PHP/user/uitlog.php" class="btn-secondary">Log Out</a>
+      <?php else: ?>
+        <a href="../PHP/user/registratie.php" class="btn-primary">Registreren</a>
+        <a href="../PHP/user/inlog.php" class="btn-secondary">Log In</a>
+      <?php endif; ?>
+    </div>
+  </div>
+</header>
 
   <!-- CONTACT SECTION -->
   <section id="contact" class="contact-section">

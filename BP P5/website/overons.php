@@ -23,7 +23,7 @@ session_start();
         <ul>
           <li><a href="index.php">Home</a></li>
           <li><a href="services.php">Services</a></li>
-          <li><a href="about.php" class="active">About Us</a></li>
+          <li><a href="overons.php" class="active">About Us</a></li>
           <li><a href="contact.php">Contact</a></li>
         </ul>
       </nav>
@@ -42,18 +42,28 @@ session_start();
   <section id="about" class="about-section">
     <div class="container about-content">
       <div class="about-text">
-        <h2>About Our Clinic</h2>
+        <h2>Over Onze Praktijk</h2>
         <p>
-          At DentaCare, we are committed to providing exceptional dental care in a comfortable and modern environment.
-          Our team of highly skilled professionals uses the latest technology to ensure your dental health and satisfaction.
+          Welkom bij DentaCare, waar uw glimlach onze hoogste prioriteit is. Onze tandartspraktijk staat bekend om het leveren van hoogwaardige tandheelkundige zorg in een moderne en gastvrije omgeving. Wij geloven dat een gezonde glimlach niet alleen bijdraagt aan uw uiterlijk, maar ook aan uw algehele welzijn en zelfvertrouwen.
         </p>
         <p>
-          From routine check-ups to advanced dental procedures, we are here to help you achieve a healthy and radiant smile.
-          Your comfort and trust are our top priorities.
+          Ons team van ervaren en toegewijde tandheelkundige professionals staat klaar om u te helpen bij al uw tandheelkundige behoeften. Of het nu gaat om een periodieke controle, een professionele gebitsreiniging, of meer complexe behandelingen zoals kronen, bruggen of implantaten, wij bieden een breed scala aan diensten die zijn afgestemd op uw specifieke wensen en behoeften.
+        </p>
+        <p>
+          Bij DentaCare maken we gebruik van de nieuwste technologieën en technieken om ervoor te zorgen dat u de best mogelijke zorg ontvangt. Onze moderne apparatuur en innovatieve behandelmethoden stellen ons in staat om nauwkeurige diagnoses te stellen en effectieve behandelingen te bieden, allemaal met uw comfort in gedachten.
+        </p>
+        <p>
+          Wij begrijpen dat een bezoek aan de tandarts voor sommige mensen spannend kan zijn. Daarom doen wij er alles aan om een ontspannen en stressvrije ervaring te creëren. Ons vriendelijke en begripvolle team neemt de tijd om naar uw zorgen te luisteren en u op uw gemak te stellen, zodat u zich volledig kunt concentreren op uw mondgezondheid.
+        </p>
+        <p>
+          Naast onze focus op tandheelkundige zorg, hechten wij veel waarde aan preventie. Wij geloven dat het voorkomen van tandheelkundige problemen net zo belangrijk is als het behandelen ervan. Daarom bieden wij uitgebreide voorlichting en advies om u te helpen een gezonde mondhygiëne te behouden.
+        </p>
+        <p>
+          Bij DentaCare draait alles om u. Wij zijn trots op de langdurige relaties die we met onze patiënten opbouwen en streven ernaar om uw verwachtingen keer op keer te overtreffen. Laat ons u helpen om de gezonde, stralende glimlach te bereiken die u verdient. Neem vandaag nog contact met ons op en ervaar zelf waarom zoveel mensen voor DentaCare kiezen!
         </p>
       </div>
       <div class="about-image">
-        <img src="../img/clinic.jpg" alt="Our Clinic" />
+        <img src="../img/kliniek.png" alt="Onze Praktijk" />
       </div>
     </div>
   </section>
