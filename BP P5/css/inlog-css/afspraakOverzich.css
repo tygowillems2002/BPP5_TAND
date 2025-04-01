@@ -52,6 +52,19 @@ a {
 a:hover {
     text-decoration: underline;
 }
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #007bff;
+}
 
 /* Responsive design */
 @media (max-width: 768px) {

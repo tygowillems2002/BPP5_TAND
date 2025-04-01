@@ -17,11 +17,13 @@ session_start();
   <header class="site-header">
   <div class="container nav-container">
     <div class="logo">
-      <a href="index.php">DentaCare</a>
+      <a href="index.php">
+        <img src="../img/logo.png" alt="DentaCare Logo" class="logo-img" />
+      </a>
     </div>
     <nav class="main-nav">
       <ul>
-        <li><a href="#hero">Home</a></li>
+        <li><a href="index.php">Home</a></li>
         <li><a href="services.php">Services</a></li>
         <li><a href="overons.php">About Us</a></li>
         <li><a href="contact.php">Contact</a></li>
@@ -45,8 +47,10 @@ session_start();
       <h1>Do it Professionally</h1>
       <?php if (!empty($_SESSION['login'])): ?>
         <a href="../PHP/afspraak/afspraak.php" class="btn-primary">Afspraak Boeken</a>
+        <a href="../PHP/afspraak/afspraakOverzicht.php" class="btn-white">Overzicht</a>
       <?php else: ?>
         <a href="../PHP/user/inlog.php" class="btn-primary">Afspraak Boeken</a>
+        <a href="../PHP/afspraak/afspraakOverzicht.php" class="btn-white">Overzicht</a>
       <?php endif; ?>
     </div>
   </div>

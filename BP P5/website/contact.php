@@ -23,15 +23,17 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet" />
 </head>
 <body>
- <!-- HEADER -->
- <header class="site-header">
+<!-- HEADER -->
+<header class="site-header">
   <div class="container nav-container">
     <div class="logo">
-      <a href="index.php">DentaCare</a>
+      <a href="index.php">
+        <img src="../img/logo.png" alt="DentaCare Logo" class="logo-img" />
+      </a>
     </div>
     <nav class="main-nav">
       <ul>
-        <li><a href="#hero">Home</a></li>
+        <li><a href="index.php">Home</a></li>
         <li><a href="services.php">Services</a></li>
         <li><a href="overons.php">About Us</a></li>
         <li><a href="contact.php">Contact</a></li>

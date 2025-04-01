@@ -17,6 +17,9 @@ if (empty($_SESSION['login'])) {
     <link rel="stylesheet" href="../../css/inlog-css/afspraakOverzich.css">
 </head>
 <body>
+    <a href="../../website/index.php">
+        <button type="button">Terug naar Home</button>
+    </a>
     
     <h2>Nieuwe afspraak</h2>
     <table>
